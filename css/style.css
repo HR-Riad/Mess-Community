@@ -1,0 +1,18 @@
+/* for google font */
+
+body{
+font-family: 'Be Vietnam Pro', sans-serif;
+font-family: 'Lato', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'PT Sans', sans-serif;
+font-family: 'Raleway', sans-serif;
+}
+/* img size  */
+header img{
+    height: 45px;
+}
+#main-pic{
+    height: 600px;
+    width: 100%;
+}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mess community</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Lato:ital,wght@0,400;1,700&family=Oswald&family=PT+Sans&family=Poppins:wght@400;500&family=Raleway:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+
+    <!-- main title part design with bootstrap -->
+
+    <header>
+        <h1 class="text-center mt-4 mb-4 col-12 col-md-12 col-sm-12 ">Mess Community 
+       <img src="image/restaurant.png" alt=""   > </h1>
+    </header>
+ <!-- main title part end -->
+
+    <section class="container ">
+        <div class="row">
+
+              <!--pic part -->
+
+          <div class="col col-lg-6 col-sm-12 col-md-12">
+            <img src="image/pic.jpg" alt="Main pic" id="main-pic" >
+          </div>
+
+        <!-- End pic part -->
+
+
+         <!-- input part start -->
+
+          <div class="col bg-light col-lg-6 col-sm-12 col-md-12">
+        
+            <!-- Total amount in input part -->
+
+              <div class="row d-flex justify-content-center">
+                <h5 class="text-center fs-5 fw-bold mb-4 mt-5" >Total Amount</h5>
+                  <div> 
+                    <p  class=" d-flex justify-content-center"> <span class="mx-2">Total Amount:  </span> <input class="rounded fw-bold"
+                        id="total-amount" type="text">
+                    </p>
+                </div>
+               
+                <!-- End Total amount  part -->
+
+
+          <!--   Expenses part inputfield part start -->
+
+                <h5 class="text-center fs-5 fw-bold mb-4" >Expenses</h5>
+                <div class=" row ">
+                    <p class="d-flex justify-content-center "><span class="mx-2"> Flat  Rents: </span> <input id="flat-rent" class="rounded fw-bold" type="text"></p>
+                    <p  class="d-flex justify-content-center"> <span class="mx-2">Food Cost: </span>  <input id="food-cost" class="rounded fw-bold" type="text"></p>
+                    <p  class="d-flex justify-content-center"> <span class="mx-2"> Others Bill: </span> <input id="others-bill" class="rounded fw-bold" type="text"> </p>
+                </div>
+           
+                 <!-- End  Expenses inputfield  -->
+
+                <!--  calculate part  start-->
+
+                <button id="calculate-btn" class="btn btn-primary mb-3 rounded w-25 d-flex justify-content-center">Calculate</button>
+                <br>
+                <p id="error" class="bg-danger fs-4  container text-center   rounded text-white "  ></p>
+                <h5  class="text-center fs-5 fw-bold mt-4" >Total Expenses: <span id="total-expense"></span></h5>
+                <h5  class="text-center fs-5 fw-bold mt-4">Balance: <span id="balance"></span></h5>
+               
+
+                  <!--  calculate part End -->
+
+           <!--  Saving amount and Remaining Balance Part  start-->
+
+                 <p class="mt-4 mb-3 d-flex justify-content-center"> <span class="mx-2">Save:</span> <input id="saving-percent" class="rounded fw-bold" type="text"> <span class="mx-4"> % </span>  <button id="save-button" class="btn btn-primary rounded">Save</button></p>
+                    <span class="bg-danger fs-4  container text-center   rounded text-white "  id="savingError"></span>
+                 <h5 class="text-center fs-5 fw-bold mt-3">Saving Amount: <span id="saving-amount"></span> </h5>
+                 <h5 class="text-center fs-5 fw-bold mt-3">Remaining Balance: <span id="remaining-balance"></span> </h5>
+
+        <!--  Saving amount and Remaining Balance Part  End-->
+              </div>
+           
+          </div>
+
+           <!-- input part End -->
+
+          </div>
+          </section>
+
+    <!--       Js and bootstrap connection -->
+
+<script src="js/calculate.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
